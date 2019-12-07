@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.aef6aff4.chunk.css",
-    "main.js": "/react-gh-pages/static/js/main.307661bc.chunk.js",
-    "main.js.map": "/react-gh-pages/static/js/main.307661bc.chunk.js.map",
-    "runtime-main.js": "/react-gh-pages/static/js/runtime-main.e49969c6.js",
-    "runtime-main.js.map": "/react-gh-pages/static/js/runtime-main.e49969c6.js.map",
-    "static/js/2.e54d1365.chunk.js": "/react-gh-pages/static/js/2.e54d1365.chunk.js",
-    "static/js/2.e54d1365.chunk.js.map": "/react-gh-pages/static/js/2.e54d1365.chunk.js.map",
-    "index.html": "/react-gh-pages/index.html",
-    "precache-manifest.394a03ca761fc4645128bec868ec9cab.js": "/react-gh-pages/precache-manifest.394a03ca761fc4645128bec868ec9cab.js",
-    "service-worker.js": "/react-gh-pages/service-worker.js",
-    "static/css/main.aef6aff4.chunk.css.map": "/react-gh-pages/static/css/main.aef6aff4.chunk.css.map",
-    "static/js/2.e54d1365.chunk.js.LICENSE": "/react-gh-pages/static/js/2.e54d1365.chunk.js.LICENSE",
-    "static/media/map.png": "/react-gh-pages/static/media/map.73f03c53.png"
+    "main.css": "/accessible/static/css/main.aef6aff4.chunk.css",
+    "main.js": "/accessible/static/js/main.b06c3613.chunk.js",
+    "main.js.map": "/accessible/static/js/main.b06c3613.chunk.js.map",
+    "runtime-main.js": "/accessible/static/js/runtime-main.bdd5e320.js",
+    "runtime-main.js.map": "/accessible/static/js/runtime-main.bdd5e320.js.map",
+    "static/js/2.8bb97299.chunk.js": "/accessible/static/js/2.8bb97299.chunk.js",
+    "static/js/2.8bb97299.chunk.js.map": "/accessible/static/js/2.8bb97299.chunk.js.map",
+    "index.html": "/accessible/index.html",
+    "precache-manifest.558fcac9ba565557cabd22371841e7ef.js": "/accessible/precache-manifest.558fcac9ba565557cabd22371841e7ef.js",
+    "service-worker.js": "/accessible/service-worker.js",
+    "static/css/main.aef6aff4.chunk.css.map": "/accessible/static/css/main.aef6aff4.chunk.css.map",
+    "static/js/2.8bb97299.chunk.js.LICENSE": "/accessible/static/js/2.8bb97299.chunk.js.LICENSE",
+    "static/media/map.png": "/accessible/static/media/map.73f03c53.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.e49969c6.js",
-    "static/js/2.e54d1365.chunk.js",
+    "static/js/runtime-main.bdd5e320.js",
+    "static/js/2.8bb97299.chunk.js",
     "static/css/main.aef6aff4.chunk.css",
-    "static/js/main.307661bc.chunk.js"
+    "static/js/main.b06c3613.chunk.js"
   ]
 }
