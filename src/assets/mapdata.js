@@ -74,16 +74,38 @@ export default {
 			lineWidth: 2,
 			preFillColor: "rgba(255, 255, 255, 0.1)",
 			strokeColor: "red",
-			details: "First floor next to the bathroom"
+			details: "First floor next to the bathroom",
+			comments: [{
+				id: 0,
+				user: "Junghoo Kim",
+				content: "The elevator is no longer avaiable",
+				userPic: "https://scontent-mia3-1.xx.fbcdn.net/v/t1.0-9/68454768_2885093098173036_2738068297177104384_o.jpg?_nc_cat=111&_nc_ohc=SyVEx5hMg0YAQnX5StF2DfHRFHoOso68jhNVOdpEOAu6gNxurOYNAS_oQ&_nc_ht=scontent-mia3-1.xx&oh=716fe6bdd557702189cab9a622a6f32a&oe=5E7962AE",
+				publishDate: "2 days ago"
+				},
+				{
+				id: 1,
+				user: "Maanvi Singhee",
+				content: "It seems like elevator construction has been completed. Now the elevator is next to the entrance.",
+				userPic: "https://media.licdn.com/dms/image/C5603AQE6yjdU21f3XQ/profile-displayphoto-shrink_800_800/0?e=1582156800&v=beta&t=Lb7QxzUC4_rQE9T1wM2RTwEdPEiCFi0yddKRYxI946E",
+				publishDate: "4 days ago"
+				},
+				{
+				id: 2,
+				user: "Trevor Laycock",
+				content: "There is an elevator construction next to the entrance. There is one other elevator back of this building.",
+				userPic: "https://media.licdn.com/dms/image/C4D03AQFQLjcwlp4E9A/profile-displayphoto-shrink_800_800/0?e=1582156800&v=beta&t=HC-TNj2uKDGG24kIXeXM0zpoOoUOtxOJQb1IVFpZK1I",
+				publishDate: "1 Week ago"
+				}
+			]
 		},
 		{
 			name: "Mudd",
 			shape: "rect",
-			coords: [252*SIZE/5, 187*SIZE/5, 289*SIZE/5, 225*SIZE/5],
+			coords: [293*SIZE/5, 84*SIZE/5, 343*SIZE/5, 99*SIZE/5],
 			lineWidth: 2,
 			preFillColor: "rgba(255, 255, 255, 0.1)",
 			strokeColor: "red",
-			details: "First floor next to the bathroom"
+			details: "3 elevators located in the lounge in front of CSB building"
 		}
 	]
 };

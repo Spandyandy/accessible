@@ -9,40 +9,21 @@ class App extends Component {
 	constructor(props){
 		super(props);
 		this.state = {
-		hoveredArea: null, clickedArea: null, details: "", stylindDetails: null,
-		comment: "",
-		comments: [
-			{
-			id: 0,
-			user: "Bonorum Malorum",
-			content: "Many desktop publishing packages and web page editors now use",
-			userPic: "https://upload.wikimedia.org/wikipedia/ru/thumb/b/bc/Garfield_the_Cat.svg/1200px-Garfield_the_Cat.svg.png",
-			publishDate: "2 days ago"
-			},
-			{
-			id: 1,
-			user: "Cicero Areals",
-			content: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-			userPic: "https://static.tgstat.ru/public/images/channels/_0/f0/f0f7f79a275a83bfe8769dfd81d40bb2.jpg",
-			publishDate: "4 days ago"
-			},
-			{
-			id: 2,
-			user: "Hanna Pages",
-			content: "Lorem Ipsum comes from sectionsof de Finibus Bonorum et Malorum (The Extremes of Good and Evil)",
-			userPic: "https://vignette.wikia.nocookie.net/versus-compendium/images/0/09/Garfield.png/revision/latest?cb=20181122134939",
-			publishDate: "1 Week ago"
-			},
-		]
+			hoveredArea: null, clickedArea: null, details: "", stylindDetails: null,
+			comment: "",
+			comments: []
 		};
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.handleChange = this.handleChange.bind(this);
-  	}
+	}
+	load() {
+		this.setState({ msg: "Interact with image to get Accessibility information!" });
+	}
 	clicked(area) {
-		console.log(area);
 		this.setState({
 			clickedArea: area,
 			details: area.details,
+			comments: area.name === "Low Library" ? mapdata.areas[4].comments : []
 		});
 	}
 	clickedOutside(evt) {
@@ -76,6 +57,7 @@ class App extends Component {
 		})
 		this.setState({
 			comments: curr,
+			comment: ""
 		})
 	}
 	handleChange(event) {
@@ -120,7 +102,7 @@ class App extends Component {
 					<div className="comment-container">
 						<h2>Add A Comment Below</h2>
 						<div className="form-group">
-							<textarea className="form-control status-box" rows="3" name="c" onChange={this.handleChange} placeholder="Enter your comment here..."></textarea>
+							<textarea className="form-control status-box" ref="c" rows="3" name="c" onChange={this.handleChange} value={this.state.comment} placeholder="Enter your comment here..."></textarea>
 						</div>
 						<div className="button-group pull-right">
 						<button className="btn btn-primary" onClick={this.handleSubmit}>Post</button>
@@ -129,8 +111,8 @@ class App extends Component {
 
 					<ul className="posts">
 					<div className="commentBox">
-						{this.state.comments.map((comment) => {
-							return <div className="comment">
+						{this.state.comments.map((comment, idx) => {
+							return <div className="comment" key={idx}>
 								<img src={comment.userPic} className="commentPic" alt="user Pic"/>
 								<div className="commentBody">
 								<div className="commentHeader">
